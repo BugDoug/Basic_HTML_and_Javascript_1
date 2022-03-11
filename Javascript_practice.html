@@ -1,0 +1,207 @@
+EXAMPLE <img src=".\img/New-Captain-America-Meme-on-Low-Quality.jpg"></img >
+        <script ="Test_1.js" ></script>
+        <script>
+            var X = "\"Be who you are and say what you feel," + " because those who mind don\'t matter and those who matter don\'t mind.\"" + "-Dr. Seuss"
+            Family = "The Arezzinis", Dad = "Jeremiah", Mom = "Hermoine", Daughter = "Penny", Son = "Zorro";
+            document.write(Dad)
+            var blues = " I have the blues.";
+            var blues = blues.fontcolor("blue")
+            document.write(blues);
+        </script>
+        <br>
+        <script>
+            document.write(676345 * 341341);
+        </script>
+        <p>This is a paragraph!</p>
+EXAMPLE
+        <button onclick="My_First_Function()">
+            Click me!
+        </button>
+        <p id="Irish">
+        </p>
+        <script>
+            function My_First_Function() {
+                var String = "Kiss me, I'm Irish!";
+                var result = String.fontcolor("green");
+                document.getElementById("Irish").innerHTML = result;
+            }
+        </script>
+EXAMPLE
+            <p id="Concatenate"></p>
+            <script>
+                Sentence = "I am learning ";
+                Sentence += "a lot from this course!";
+                document.getElementById("Concatenate").innerHTML = Sentence;
+            </script>
+            </p>
+
+            <p id="Negation"></p>
+            <script>
+                var x = 10;
+                document.getElementById("Negation").innerHTML = -x;
+            </script>
+            <script>
+                var X = 5;
+                X++;
+                document.write(X)
+            </script>
+            <script>
+                window.alert(Math.random());
+            </script>
+
+<!--Dictionary-->
+            <p id="Display"></p>
+            <script>
+                var Animal = {
+                    Animal: "Dog",
+                    Color: "Black",
+                    Breed: "Labrador",
+                    Age: 5,
+                    Sound: "Bark!",
+                };
+                document.getElementById("Display").innerHTML = Animal.Animal;
+            </script>
+            <script>
+                document.write(typeof 76426436);
+            </script>
+        <p id="Infinity"></p>
+        <script>
+            document.getElementById("Infinity").innerHTML = 1.797E+309;
+        </script>
+<!-- Console calculation (Doesn't show in webpage only developer console)-->
+            <script>
+                console.log(2 + 2);
+            </script>
+
+<!--Boolean Example "NOT"-->
+            <P id="Not"></P>
+            <script>
+                document.getElementById("Not").innerHTML = !!(20 > 10);
+            </script>
+<!--Comparison Operators-->
+        <p>Riders must be at least 52 centimeters tall to ride.</p>
+        <input id="Height" value="" />
+        <button onclick="Ride_Function()">Click here</button>
+        <p id="Ride"></p>
+        <script>
+            function Ride_Function() {
+                var Height, Can_ride;
+                Height = document.getElementById("Height").value;
+                Can_ride = (Height < 52) ? "You are too short" : "You are tall enough";
+                document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
+            }
+        </script>
+<!--Keywords and constructors-->
+                <p id="Keywords_and_Constructors"></p>
+                <!-- Function Vehicle is an object constructor-->
+                <script>
+                    function Vehicle(Make, Model, Year, Color) {
+                        this.Vehicle_Make = Make;
+                        this.Vehicle_Model = Model;
+                        this.Vehicle_year = Year;
+                        this.Vehicle_Color = Color;
+                    }
+                    var Jack = new Vehicle("Dodge", "Viper", 2021, "Red");
+                    var Emily = new Vehicle("Jeep", "Trail Hawk", 2020, "White and Black");
+                    var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+                    document.getElementById("Keywords_and_Constructors").innerHTML =
+                        "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model
+                        + " manufactured in " + Erik.Vehicle_year;
+                </script>
+<!--Nested Function-->
+        <p id="Counting"></p>
+        <!-- Plus_one is the nested function-->
+        <script>
+            document.getElementById("Counting").innerHTML = Count();
+            function Count() {
+                var Starting_point = 9;
+                function Plus_one() { Starting_point += 1; }
+                Plus_one();
+                return Starting_point;
+            }
+        </script>
+<!--Global Variable-->
+        <script>
+            var X = 10;
+            function Add_numbers_1() {
+            document.write(20 + X + "<br>");
+            }
+            function Add_numbers_2() {
+            document.write(X + 100);
+            }
+            Add_numbers_1();
+            Add_numbers_2();
+        </script>
+<!--Nested Functions -Replace Console log with  document.write(X + 100);-->
+    <script>
+        function Add_numbers_1() {
+            var X = 10;
+            document.write(20 + X + "<br>");
+        }
+        function Add_numbers_2() {
+            console.log(X + 100)
+        }
+        Add_numbers_1();
+        Add_numbers_2();
+    </script>
+<!-- Else if Statements-->
+        <p> Write your age:</p>
+        <input id="Age" value="" />
+        <p id="How_old_are_you?"></p>
+        <button onclick="Age_Function()">Click here</button>
+            <script>
+            function Age_Function() {
+                Age = document.getElementById("Age").value;
+                if (Age >= 18)  {
+                    Vote = "You are old enough to vote!"
+                }
+                else    {
+                    Vote = "You are not old enough to vote!";
+                }
+                document.getElementById("How_old_are_you?").innerHTML = Vote;
+            }
+            </script>
+
+  <p id="Time_of_day"></p>
+     <script>
+         function Time_function()   {
+             var Time = new Date() .getHours();
+             var Reply;
+             if (Time < 12 == Time > 0) {
+                Reply = "It is morning time!";
+             }
+             else if(Time > 12 == Time < 18) {
+                 Reply = "It is the afternoon.";
+             }
+             else   {
+                 Reply = "It is the evening time.";
+            }
+            document.getElementById("Time_of_day").innerHTML = Reply;
+         }
+         Time_function();
+     </script>
+<!--Concatenate (Connect together)-->
+            <p id="Concatenate"></p>
+            <script>
+                var part_1 = "I have ";
+                var part_2 = "made this ";
+                var part_3 = "into a complete ";
+                var part_4 = "sentence.";
+                var whole_sentence = part_1.concat(part_2, part_3, part_4);
+                document.getElementById("Concatenate").innerHTML = whole_sentence;
+            </script>
+<!--Slice/Capitals/Search functions-->
+            <p id="Slice"></p>
+            <script>
+                var Sentence = "All work and no play makes Johnny a dull boy."
+                var Section = Sentence.slice(27, 44).toUpperCase();
+                var Dull = Sentence.search(/dull/);
+                document.getElementById("Slice").innerHTML = Section; 
+            </script>
+
+            <p id="Precision"></p>
+            <script>
+                var X = 12938.3012987376112;
+                document.getElementById("Precision").innerHTML = X.toPrecision(10);
+            </script>
+<!--Timer-->
